@@ -13,7 +13,7 @@ function App() {
 
     return () => clearTimeout(timer);
   }, []);
-  return <>{PortofolioPage ? <Welcome /> : <IntroPage />}</>;
+  return <> <Welcome /> </>;
 }
 
 export default App;

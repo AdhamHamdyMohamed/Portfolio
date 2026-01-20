@@ -1,0 +1,59 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": "Sofrah",
+      "description": "A clean, responsive UI landing page crafted for a freelance project.",
+      "tech": ["HTML", "CSS", "Bootstrap", "JavaScript"],
+      "github": "https://github.com/AdhamHamdyMohamed/sofrah-landing-page",
+      "demo": "https://sofrah-landing-page.vercel.app/",
+      "category": "Client Work",
+      "state": "Finished",
+      "img": "Sofrah.png"
+    },
+    {
+      "id": 2,
+      "name": "E-Commerce Platform",
+      "description": "Full-featured e-commerce web application integrated with AI capabilities.",
+      "tech": ["Next.js", "Supabase", "Open AI API"],
+      "github": "",
+      "demo": "",
+      "category": "Personal",
+      "state": "In Progress",
+      "img": "inProgress.png"
+    },
+    {
+      "id": 3,
+      "name": "Code Connect",
+      "description": "A developer platform combining Q&A, live support, real-time chat, and AI assistance for programmers.",
+      "tech": ["Next.js", "Nest.js", "Socket.io"],
+      "github": "https://github.com/AdhamHamdyMohamed/CodeConnect",
+      "demo": "https://code-connect.spider-tech.net/en",
+      "category": "ITI Teammates",
+      "state": "Live",
+      "img": "codeConnect.png"
+    },
+    {
+      "id": 4,
+      "name": "AI Chatbot",
+      "description": "AI chatbot interface built using HTML, CSS, and JavaScript, integrating OpenAI's API.",
+      "tech": ["HTML", "CSS", "Bootstrap", "JavaScript"],
+      "github": "https://github.com/username/dashboard",
+      "demo": "https://dashboard.vercel.app",
+      "category": "Personal",
+      "state": "Finished",
+      "img": "AIChatBot.png"
+    },
+    {
+      "id": 5,
+      "name": "Car Rental Project",
+      "description": "Web-based Car Rental System demonstration.",
+      "tech": ["HTML", "CSS", "Bootstrap", "JavaScript"],
+      "github": "https://github.com/AdhamHamdyMohamed/Car-Rental-Project",
+      "demo": "https://car-rental-system.pages.dev/",
+      "category": "ITI Teammates",
+      "state": "Finished",
+      "img": "carRental.png"
+    }
+  ]
+}
