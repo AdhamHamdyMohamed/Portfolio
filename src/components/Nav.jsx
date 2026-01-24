@@ -4,7 +4,7 @@ export default function Nav() {
   const menuItems = ["About", "Projects", "Contact"];
 
   return (
-    <div className="flex items-center z-10 sticky top-0 justify-between md:justify-center bg-zinc-50 shadow-sm w-full px-4 py-4">
+    <div className="flex items-center z-10 sticky top-0 justify-between md:justify-center bg-zinc-50 shadow-sm max-w-full px-4 py-4">
       <div className="text-center">
         <a className="cursor-pointer text-2xl sm:text-start font-bold">
           Adham Hamdy

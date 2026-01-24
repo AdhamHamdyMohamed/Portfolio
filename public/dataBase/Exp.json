@@ -1,0 +1,42 @@
+{
+  "experience": [
+    {
+      "id": 1,
+      "title": "Freelance Front End Developer",
+      "location": "Khamsat - Self Employed",
+      "date": "08/2025 - Present",
+      "description": "Developed responsive and scalable websites and web applications for multiple clients using modern frontend technologies. Collaborated closely with clients to gather requirements, translate business needs into technical solutions, and deliver high-quality, user-focused products within agreed timelines.",
+      "skills": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Next.js",
+        "Unit Testing",
+        "Git",
+        "GitHub",
+        "Tailwind CSS",
+        "Bootstrap"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Innovation & Business Trainee",
+      "location": "Startup Factory x ITI - Smart Village & New Administrative Capital",
+      "date": "03/2025 - 08/2025",
+      "description": "Participated in an Innovation & Business Bootcamp, collaborating within cross-functional teams to transform real-world problems into functional MVP products. Applied Design Thinking and UX principles to build market-ready solutions, conducted market research, and successfully pitched projects to ITI and Startup Factory mentors.",
+      "skills": [
+        "Design Thinking",
+        "Innovation Management",
+        "Minimum Viable Product(MVP)",
+        "Lean Startup Methodology",
+        "Pitching",
+        "Team Collaboration",
+        "Problem Solving",
+        "Business Modeling",
+        "Market Research"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+import React from "react";
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
+
+export default function SectionThree() {
+  useEffect(() => {
+    Aos.init({
+      once: true,
+    });
+  }, []);
+  return (
+    <>
+      <section className="py-16 px-4">
+        <h1 className="text-4xl font-bold text-center">Education</h1>
+        <div
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+          className="max-w-5xl mx-auto mt-5"
+        >
+          <div className="bg-white rounded-lg shadow-md p-6 mb-8 outline-2 outline-offset-4 outline-dashed outline-zinc-500">
+            <h2 className="text-2xl font-semibold mb-4">
+              Information Technology Institute (ITI) - Full Stack Web
+              Development (MERN Track)
+            </h2>
+            <h3 className="text-xl font-medium mb-2">Mansoura University</h3>
+            <p className="text-gray-600 mb-2">03/2025 - 08/2025</p>
+            <p className="text-gray-700 mt-3.5 border-2 border-dashed border-zinc-500 p-4 rounded-lg bg-gray-50 text-justify">
+              Full-Stack Web Development (MERN Track) | ITI Completed an
+              intensive 5-month professional training focused on building
+              scalable web applications and MVPs. Proficient in the MERN stack
+              (MongoDB, Express, React, Node.js) and Angular, with expertise in
+              MVC architecture, JWT authentication, and RESTful APIs.
+              Experienced in crafting responsive UIs using Tailwind and Material
+              UI, while integrating Generative AI features via OpenAI APIs and
+              Prompt Engineering. Practiced Agile methodologies and version
+              control using Git and Postman to deliver high-quality digital
+              solutions.
+            </p>
+          </div>
+        </div>
+      </section>
+      <hr className="w-100 my-4 border-t-2 border-gray-400 m-auto" />
+    </>
+  );
+}
