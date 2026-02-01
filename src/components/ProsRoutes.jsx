@@ -7,7 +7,7 @@ import Footer from "./Footer";
 export default function Welcome() {
   return (
     <>
-      <div className="bg-zinc-300 min-h-screen p-2">
+      <div className="bg-zinc-300 min-h-screen py-2">
         <Nav />
 
         <Routes>
