@@ -89,7 +89,11 @@ export default function SectionOne() {
           </div>
         </div>
       </section>
-      <hr className="w-100 my-4 border-t-2 border-gray-400 m-auto" />
+      <hr
+        data-aos="fade-up"
+        data-aos-anchor-placement="center-center"
+        className="w-100 my-4 border-t-2 border-gray-400 m-auto"
+      />
     </>
   );
 }

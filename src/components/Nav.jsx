@@ -1,61 +1,49 @@
-import React from "react";
+import Aos from "aos";
+import React, { useEffect } from "react";
+import { Link } from "react-scroll";
 
 export default function Nav() {
-  const menuItems = ["About", "Projects", "Contact"];
+  const menuItems = ["Projects", "Contact"];
+
+  useEffect(() => {
+    Aos.init({ once: true });
+  });
 
   return (
-    <div className="flex items-center z-10 sticky top-0 justify-between md:justify-center bg-zinc-50 shadow-sm max-w-full px-4 py-4">
-      <div className="text-center">
-        <a className="cursor-pointer text-2xl sm:text-start font-bold">
+    <nav
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000"
+      className="max-w-2xl mx-auto mt-4 px-4 sm:sticky sm:top-1 z-10 "
+    >
+      <div
+        className="flex flex-col sm:flex-row items-center justify-between gap-4
+                      rounded-3xl bg-zinc-100 shadow-lg px-6 py-4 "
+      >
+        <Link
+          to="/"
+          className="gravitas-one-regular text-2xl md:text-3xl font-bold
+                     text-zinc-900 bg-zinc-300 px-5 py-2 rounded-full
+                     hover:bg-zinc-400 transition duration-400 asap-condensed-bold"
+        >
           Adham Hamdy
-        </a>
-      </div>
-      <div className="navbar-end">
-        <ul className="menu menu-horizontal hidden md:flex px-1">
-          {menuItems.map((i) => {
-            return (
-              <li key={i}>
-                <a>{i}</a>
-              </li>
-            );
-          })}
+        </Link>
+
+        <ul className="flex gap-6 text-zinc-600 font-medium">
+          {menuItems.map((item, i) => (
+            <li key={i}>
+              <Link
+                to={item}
+                smooth={true}
+                duration={1000}
+                className="hover:text-zinc-900 transition-colors duration-300 cursor-pointer"
+              >
+                {item}
+              </Link>
+            </li>
+          ))}
         </ul>
-
-        <div className="dropdown dropdown-end md:hidden">
-          <label tabIndex={0} className="btn btn-circle swap swap-rotate">
-            <input type="checkbox" />
-            <svg
-              className="swap-off fill-current"
-              xmlns="http://www.w3.org/2000/svg"
-              width="32"
-              height="32"
-              viewBox="0 0 512 512"
-            >
-              <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
-            </svg>
-            <svg
-              className="swap-on fill-current w-6 h-6"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 512 512"
-            >
-              <polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" />
-            </svg>
-          </label>
-
-          <ul
-            tabIndex={0}
-            className="menu dropdown-content mt-3 p-4 font-bold text-xl shadow bg-base-100 rounded-box w-52"
-          >
-            {menuItems.map((i) => {
-              return (
-                <li key={i}>
-                  <a>{i}</a>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
       </div>
-    </div>
+    </nav>
   );
 }

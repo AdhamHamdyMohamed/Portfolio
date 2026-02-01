@@ -1,14 +1,11 @@
 import { useState, useEffect } from "react";
 import { fetchProjects } from "../services/projectsApi";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faShareFromSquare } from "@fortawesome/free-solid-svg-icons";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
+import Details from "./Details";
 export default function SectionTwo() {
   const [projects, setProjects] = useState([]);
+  const [selectedProject, setSelectedProject] = useState(null);
 
   const getProjects = async () => {
     const data = await fetchProjects();
@@ -24,7 +21,7 @@ export default function SectionTwo() {
 
   return (
     <>
-      <section className="py-16 px-4">
+      <section id="Projects" className="py-16 px-4">
         <div
           data-aos="fade-up"
           data-aos-delay="300"
@@ -41,10 +38,7 @@ export default function SectionTwo() {
                 key={pro.id}
                 className="bg-white outline-2 outline-offset-4 outline-dashed outline-zinc-500 rounded-lg shadow-md overflow-hidden"
               >
-                <a
-                  href={pro.demo}
-                  className="relative d-block group overflow-hidden"
-                >
+                <a className="relative d-block group overflow-hidden">
                   <img
                     src={`/dataBase/assets/${pro.img}`}
                     alt={pro.name}
@@ -71,29 +65,34 @@ export default function SectionTwo() {
                     ))}
                     <br />
                   </div>
-                  <div className="mt-2 text-gray-500 text-3xl cursor-pointer flex gap-6 justify-end">
-                    <a
-                      href={pro.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {<FontAwesomeIcon icon={faGithub} />}
-                    </a>
-                    <a
-                      href={pro.demo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {<FontAwesomeIcon icon={faShareFromSquare} />}
-                    </a>
-                  </div>
+                  {pro.id !== 2 && (
+                    <div className="text-center">
+                      <button
+                        className="btn btn-dash btn-success mt-4 text-zinc-800"
+                        onClick={() => setSelectedProject(pro)}
+                      >
+                        Details
+                      </button>
+                    </div>
+                  )}
                 </div>
               </div>
             ))}
           </div>
         </div>
       </section>
-      <hr className="w-100 my-4 border-t-2 border-gray-400 m-auto" />
+
+      {selectedProject && (
+        <Details
+          {...selectedProject}
+          onClose={() => setSelectedProject(null)}
+        />
+      )}
+      <hr
+        data-aos="fade-up"
+        data-aos-anchor-placement="center-center"
+        className="w-100 my-4 border-t-2 border-gray-400 m-auto"
+      />
     </>
   );
 }

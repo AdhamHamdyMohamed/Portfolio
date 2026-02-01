@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import IntroPage from "./components/IntroPage";
-import Welcome from "./components/Welcome";
+import ProsRoutes from "./components/ProsRoutes";
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
 
 function App() {
   const [PortofolioPage, SetPortofolioPage] = useState(false);
@@ -13,7 +15,13 @@ function App() {
 
     return () => clearTimeout(timer);
   }, []);
-  return <> <Welcome /> </>;
+  return (
+    <>
+      {" "}
+      {PortofolioPage ? <ProsRoutes /> : <IntroPage />}
+      <ToastContainer />
+    </>
+  );
 }
 
 export default App;

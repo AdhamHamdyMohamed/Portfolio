@@ -1,8 +1,10 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { useState } from "react";
 import axios from "axios";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLink } from "@fortawesome/free-solid-svg-icons";
 
 export default function SectionFour() {
   const [experience, setExperience] = useState();
@@ -24,17 +26,26 @@ export default function SectionFour() {
           data-aos="zoom-in-right"
           data-aos-delay="800"
           data-aos-duration="1000"
-          className="max-w-5xl mx-auto mt-12"
+          className="max-w-5xl mx-auto mt-8"
         >
           {experience &&
             experience.map((exp) => {
               return (
                 <div
                   key={exp.id}
-                  className="bg-white rounded-lg shadow-md p-6 mb-8 outline-2 outline-offset-4 outline-dashed outline-zinc-500"
+                  className="bg-white rounded-lg shadow-md p-6 mb-6 outline-2 outline-offset-4 outline-dashed outline-zinc-500"
                 >
                   <h2 className="text-2xl font-semibold mb-4">{exp.title}</h2>
-                  <h3 className="text-xl font-medium mb-2">{exp.location}</h3>
+                  <h3 className="text-xl font-medium mb-2">
+                    {exp.location}{" "}
+                    <a
+                      href={exp.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FontAwesomeIcon icon={faLink} />
+                    </a>
+                  </h3>
                   <p className="text-gray-600 mb-2">{exp.date}</p>
                   <p className="text-gray-700 mt-3.5 border-2 border-dashed border-zinc-500 p-4 rounded-lg bg-gray-50 text-justify">
                     {exp.description}
@@ -54,6 +65,11 @@ export default function SectionFour() {
             })}
         </div>
       </section>
+      <hr
+        data-aos="fade-up"
+        data-aos-anchor-placement="center-center"
+        className="w-100 my-4 border-t-2 border-gray-400 m-auto"
+      />
     </>
   );
 }

@@ -9,18 +9,24 @@
       "demo": "https://sofrah-landing-page.vercel.app/",
       "category": "Client Work",
       "state": "Finished",
-      "img": "Sofrah.webp"
+      "img": "Sofrah.webp",
+      "problemStatement": "The client needed a visually appealing and user-friendly landing page to showcase their services and attract potential customers.",
+      "solution": "Developed a responsive landing page using HTML, CSS, Bootstrap, and JavaScript, ensuring compatibility across various devices and browsers. Implemented modern design principles to enhance user experience and engagement.",
+      "outcome": "The landing page successfully attracted more visitors and potential clients, leading to increased inquiries and business opportunities for the client."
     },
     {
       "id": 2,
       "name": "E-Commerce Platform",
-      "description": "Full-featured e-commerce web application integrated with AI capabilities.",
+      "description": "A Full-featured e-commerce web application integrated with AI capabilities.",
       "tech": ["Next.js", "Supabase", "Open AI API"],
       "github": "",
       "demo": "",
       "category": "Personal",
       "state": "In Progress",
-      "img": "inProgress.webp"
+      "img": "inProgress.webp",
+      "problemStatement": "The challenge was to create a seamless AI-powered online shopping experience that enhances user engagement and streamlines operations, serving not only customers but also marketers by enabling them to easily create landing pages to showcase their products and optimize the buying and selling experience.",
+      "solution": "Developing a full-featured e-commerce platform using Next.js for the frontend, Supabase for backend services, and integrating OpenAI's API to provide personalized recommendations and customer support.",
+      "outcome": "The project is currently in progress, with plans to launch a beta version soon to gather user feedback and make further improvements."
     },
     {
       "id": 3,
@@ -31,29 +37,38 @@
       "demo": "https://code-connect.spider-tech.net/en",
       "category": "ITI Teammates - Spider Tech Startup",
       "state": "Live",
-      "img": "codeConnect.webp"
+      "img": "codeConnect.webp",
+      "problemStatement": "Developers often face challenges in finding quick and reliable support for coding issues, leading to delays in project completion and frustration.",
+      "solution": "Created 'Code Connect', a comprehensive platform that integrates Q&A forums, live support, real-time chat, and AI assistance to provide developers with instant help and resources.",
+      "outcome": "Developed as part of the ITI Teammate initiative, this project, one of the flagship products of the Spider Tech startup, successfully competed at major tech events, including the Delta Tech Summit and Digitopia."
     },
     {
       "id": 4,
       "name": "AI Chatbot",
-      "description": "AI chatbot interface built using HTML, CSS, and JavaScript, integrating OpenAI's API.",
+      "description": "An AI chatbot interface built using HTML, CSS, and JavaScript, integrating OpenAI's API.",
       "tech": ["HTML", "CSS", "Bootstrap", "JavaScript"],
       "github": "https://github.com/AdhamHamdyMohamed/ai_chatbot",
       "demo": "https://aichatbot-two-omega.vercel.app/",
       "category": "Personal",
       "state": "Finished",
-      "img": "AIChatBot.webp"
+      "img": "AIChatBot.webp",
+      "problemStatement": "Users often struggle to find quick and accurate information on various topics, leading to frustration and inefficiency.",
+      "solution": "Developed an AI chatbot interface that leverages OpenAI's API to provide users with instant responses to their queries in a conversational manner.",
+      "outcome": "The AI chatbot successfully enhanced user experience by delivering accurate and timely information, demonstrating the potential of AI in improving customer support and engagement."
     },
     {
       "id": 5,
       "name": "Car Rental Project",
-      "description": "This project is a web-based Car Rental System demonstration.",
+      "description": "A project is a web-based Car Rental System demonstration.",
       "tech": ["HTML", "CSS", "Bootstrap", "JavaScript"],
       "github": "https://github.com/AdhamHamdyMohamed/Car-Rental-Project",
       "demo": "https://car-rental-system.pages.dev/",
       "category": "ITI Teammates",
       "state": "Finished",
-      "img": "carRental.webp"
+      "img": "carRental.webp",
+      "problemStatement": "Managing car rentals manually can lead to inefficiencies, errors, and a poor customer experience.",
+      "solution": "Developed a web-based Car Rental System that automates the rental process, allowing users to easily browse available cars, make reservations, and manage their rentals online.",
+      "outcome": "The Car Rental System improved operational efficiency, reduced errors, and enhanced the overall customer experience, making it easier for users to rent cars."
     }
   ]
 }
