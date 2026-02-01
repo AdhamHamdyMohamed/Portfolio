@@ -36,7 +36,7 @@ export default function SectionTwo() {
             {projects.map((pro) => (
               <div
                 key={pro.id}
-                className="bg-white outline-2 outline-offset-4 outline-dashed outline-zinc-500 rounded-lg shadow-md overflow-hidden"
+                className="bg-white border-2 border-dashed border-zinc-500 rounded-lg shadow-md overflow-hidden"
               >
                 <a className="relative d-block group overflow-hidden">
                   <img
@@ -91,7 +91,7 @@ export default function SectionTwo() {
       <hr
         data-aos="fade-up"
         data-aos-anchor-placement="center-center"
-        className="w-100 my-4 border-t-2 border-gray-400 m-auto"
+        className="w-full my-4 border-t-2 border-gray-400 mx-auto"
       />
     </>
   );

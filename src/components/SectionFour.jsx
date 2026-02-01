@@ -33,7 +33,7 @@ export default function SectionFour() {
               return (
                 <div
                   key={exp.id}
-                  className="bg-white rounded-lg shadow-md p-6 mb-6 outline-2 outline-offset-4 outline-dashed outline-zinc-500"
+                  className="bg-white rounded-lg shadow-md p-6 mb-6 border-2 border-dashed border-zinc-500 "
                 >
                   <h2 className="text-2xl font-semibold mb-4">{exp.title}</h2>
                   <h3 className="text-xl font-medium mb-2">
@@ -68,7 +68,7 @@ export default function SectionFour() {
       <hr
         data-aos="fade-up"
         data-aos-anchor-placement="center-center"
-        className="w-100 my-4 border-t-2 border-gray-400 m-auto"
+        className="w-full my-4 border-t-2 border-gray-400 mx-auto"
       />
     </>
   );

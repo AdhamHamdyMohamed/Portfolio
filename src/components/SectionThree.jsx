@@ -21,7 +21,7 @@ export default function SectionThree() {
           data-aos-duration="2000"
           className="max-w-5xl mx-auto mt-5"
         >
-          <div className="bg-white rounded-lg shadow-md p-6 outline-2 outline-offset-4 outline-dashed outline-zinc-500">
+          <div className="bg-white rounded-lg shadow-md p-6 border-2 border-dashed border-zinc-500 ">
             <h2 className="text-2xl font-semibold mb-4">
               Information Technology Institute (ITI) - Full Stack Web
               Development (MEARN Track)
@@ -54,7 +54,7 @@ export default function SectionThree() {
       <hr
         data-aos="fade-up"
         data-aos-anchor-placement="center-center"
-        className="w-100 my-4 border-t-2 border-gray-400 m-auto"
+        className="w-full my-4 border-t-2 border-gray-400 mx-auto"
       />
     </>
   );

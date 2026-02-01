@@ -70,7 +70,7 @@ export default function Contact() {
       className="py-16 px-4"
     >
       <h1 className="text-4xl font-bold text-center">Contact</h1>
-      <div className="bg-white sm:max-w-5xl mt-8 mx-auto rounded-lg shadow-md p-7 outline-2 outline-offset-4 outline-dashed outline-zinc-500">
+      <div className="bg-white sm:max-w-5xl mt-8 mx-auto rounded-lg shadow-md p-7 border-2 border-dashed border-zinc-500 ">
         <form onSubmit={formik.handleSubmit} className="space-y-6 mx-auto">
           <div>
             <input

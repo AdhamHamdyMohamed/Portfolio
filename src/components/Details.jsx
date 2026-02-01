@@ -1,4 +1,6 @@
-import { useParams } from "react-router-dom";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircleXmark } from "@fortawesome/free-regular-svg-icons";
 
 export default function Details({
   img,
@@ -11,7 +13,6 @@ export default function Details({
   demo,
   onClose,
 }) {
-  
   return (
     <>
       <dialog open className="modal">
@@ -66,9 +67,9 @@ export default function Details({
                 <button
                   type="button"
                   onClick={onClose}
-                  className="btn btn-zinc outline-2 outline-offset-4 outline-dashed outline-zinc-500 rounded-md"
+                  className="btn btn-sm btn-circle font-bold text-xl mb-2 btn-ghost absolute right-2 top-2"
                 >
-                  Close
+                  <FontAwesomeIcon icon={faCircleXmark} />
                 </button>
               </div>
             </form>

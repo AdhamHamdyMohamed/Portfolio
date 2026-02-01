@@ -92,7 +92,7 @@ export default function SectionOne() {
       <hr
         data-aos="fade-up"
         data-aos-anchor-placement="center-center"
-        className="w-100 my-4 border-t-2 border-gray-400 m-auto"
+        className="w-full my-4 border-t-2 border-gray-400 mx-auto"
       />
     </>
   );
