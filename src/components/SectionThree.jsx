@@ -14,7 +14,9 @@ export default function SectionThree() {
   return (
     <>
       <section className="py-16 px-4">
-        <h1 className="text-4xl font-bold text-center">Education</h1>
+        <h1 className="text-4xl text-gray-900 font-bold text-center">
+          Education
+        </h1>
         <div
           data-aos="flip-left"
           data-aos-easing="ease-out-cubic"
@@ -22,11 +24,11 @@ export default function SectionThree() {
           className="max-w-5xl mx-auto mt-5"
         >
           <div className="bg-white rounded-lg shadow-md p-6 border-2 border-dashed border-zinc-500 ">
-            <h2 className="text-2xl font-semibold mb-4">
+            <h2 className="text-2xl font-semibold mb-4 text-zinc-900">
               Information Technology Institute (ITI) - Full Stack Web
               Development (MEARN Track)
             </h2>
-            <h3 className="text-xl font-medium mb-2">
+            <h3 className="text-xl font-medium mb-2 text-zinc-800">
               Mansoura University{" "}
               <a
                 target="_blank"
@@ -54,7 +56,7 @@ export default function SectionThree() {
       <hr
         data-aos="fade-up"
         data-aos-anchor-placement="center-center"
-        className="w-full my-4 border-t-2 border-gray-400 mx-auto"
+        className="sm:w-2xl w-[200px] my-4 border-t-2 border-gray-400 mx-auto"
       />
     </>
   );

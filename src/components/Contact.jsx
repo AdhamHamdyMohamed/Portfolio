@@ -69,7 +69,7 @@ export default function Contact() {
       data-aos-duration="1000"
       className="py-16 px-4"
     >
-      <h1 className="text-4xl font-bold text-center">Contact</h1>
+      <h1 className="text-4xl font-bold text-center text-gray-900">Contact</h1>
       <div className="bg-white sm:max-w-5xl mt-8 mx-auto rounded-lg shadow-md p-7 border-2 border-dashed border-zinc-500 ">
         <form onSubmit={formik.handleSubmit} className="space-y-6 mx-auto">
           <div>
@@ -80,7 +80,7 @@ export default function Contact() {
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
               value={formik.values.name}
-              className="input input-bordered w-full"
+              className="input border-2 border-zinc-500 w-full text-gray-950 bg-white"
             />
             {formik.touched.name && formik.errors.name && (
               <p className="text-red-500 text-sm mt-1">{formik.errors.name}</p>
@@ -95,7 +95,7 @@ export default function Contact() {
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
               value={formik.values.email}
-              className="input input-bordered w-full"
+              className="input border-2 border-zinc-500 w-full text-gray-950 bg-white"
             />
             {formik.touched.email && formik.errors.email && (
               <p className="text-red-500 text-sm mt-1">{formik.errors.email}</p>
@@ -110,7 +110,7 @@ export default function Contact() {
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
               value={formik.values.message}
-              className="textarea textarea-bordered w-full"
+              className="textarea border-2 border-zinc-500 w-full text-gray-800 bg-white"
             />
             {formik.touched.message && formik.errors.message && (
               <p className="text-red-500 text-sm mt-1">
@@ -121,14 +121,14 @@ export default function Contact() {
           <div className="text-center">
             <button
               type="submit"
-              className="btn btn-info w-50"
+              className="btn btn-success text-zinc-800"
               disabled={formik.isSubmitting}
             >
               Send
             </button>
           </div>
 
-          <div className="divider divider-neutral">Or</div>
+          <div className="divider divider-neutral text-zinc-800">Or</div>
 
           <div className="flex justify-center gap-6 text-3xl">
             <a

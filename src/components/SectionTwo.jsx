@@ -45,9 +45,9 @@ export default function SectionTwo() {
                     loading="lazy"
                     className="w-full h-50 object-cover scale-100 group-hover:scale-110 transition-transform duration-300"
                   />
-                  <h2 className="text-xl font-bold mt-3 mx-3 ">{pro.name}</h2>
+                  <h2 className="text-xl text-zinc-800 font-bold mt-3 mx-3 ">{pro.name}</h2>
                 </a>
-                <div className="p-3">
+                <div className="p-3 text-zinc-700">
                   <h5>
                     {pro.state} - {pro.category}
                   </h5>
@@ -91,7 +91,7 @@ export default function SectionTwo() {
       <hr
         data-aos="fade-up"
         data-aos-anchor-placement="center-center"
-        className="w-full my-4 border-t-2 border-gray-400 mx-auto"
+        className="sm:w-2xl w-[200px] my-4 border-t-2 border-gray-400 mx-auto"
       />
     </>
   );

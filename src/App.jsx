@@ -18,8 +18,7 @@ function App() {
   return (
     <>
       {" "}
-      {/* {PortofolioPage ? <ProsRoutes /> : <IntroPage />} */}
-      <ProsRoutes /> 
+      {PortofolioPage ? <ProsRoutes /> : <IntroPage />}
       <ToastContainer />
     </>
   );

@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFile } from "@fortawesome/free-regular-svg-icons";
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faMedium } from "@fortawesome/free-brands-svg-icons";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -60,7 +61,7 @@ export default function SectionOne() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div className="flex items-center gap-1 p-1 cursor-pointer text-zinc-700 font-medium hover:text-zinc-900 outline outline-offset-2 outline-dashed transition-colors duration-300 bg-zinc-200 w-max rounded-lg">
+                <div className="flex items-center gap-1 p-1 cursor-pointer text-zinc-700 font-medium hover:text-zinc-900 border-2 border-dashed border-zinc-500 transition-colors duration-300 bg-zinc-200 w-max rounded-lg">
                   <FontAwesomeIcon icon={faFile} />{" "}
                   <span className="text-md text-zinc-700">CV</span>
                 </div>
@@ -70,7 +71,7 @@ export default function SectionOne() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div className="flex items-center gap-1 p-1 cursor-pointer text-zinc-700 font-medium hover:text-zinc-900 outline outline-offset-2 outline-dashed transition-colors duration-300 bg-zinc-200 w-max rounded-lg">
+                <div className="flex items-center gap-1 p-1 cursor-pointer text-zinc-700 font-medium hover:text-zinc-900 border-2 border-dashed border-zinc-500 transition-colors duration-300 bg-zinc-200 w-max rounded-lg">
                   <FontAwesomeIcon icon={faLinkedinIn} />{" "}
                   <span className="text-md text-zinc-700">LinkedIn</span>
                 </div>
@@ -80,9 +81,19 @@ export default function SectionOne() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div className="flex items-center gap-1 p-1 cursor-pointer text-zinc-700 font-medium hover:text-zinc-900 outline outline-offset-2 outline-dashed transition-colors duration-300 bg-zinc-200 w-max rounded-lg">
+                <div className="flex items-center gap-1 p-1 cursor-pointer text-zinc-700 font-medium hover:text-zinc-900 border-2 border-dashed border-zinc-500 transition-colors duration-300 bg-zinc-200 w-max rounded-lg">
                   <FontAwesomeIcon icon={faGithub} />{" "}
                   <span className="text-md text-zinc-700">GitHub</span>
+                </div>
+              </a>
+              <a
+                href="https://medium.com/@adham.hamdy.eldiasty"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="flex items-center gap-1 p-1 cursor-pointer text-zinc-700 font-medium hover:text-zinc-900 border-2 border-dashed border-zinc-500 transition-colors duration-300 bg-zinc-200 w-max rounded-lg">
+                  <FontAwesomeIcon icon={faMedium} />{" "}
+                  <span className="text-md text-zinc-700">Medium</span>
                 </div>
               </a>
             </div>
@@ -92,7 +103,7 @@ export default function SectionOne() {
       <hr
         data-aos="fade-up"
         data-aos-anchor-placement="center-center"
-        className="w-full my-4 border-t-2 border-gray-400 mx-auto"
+        className="sm:w-2xl w-[200px] my-4 border-t-2 border-gray-400 mx-auto"
       />
     </>
   );

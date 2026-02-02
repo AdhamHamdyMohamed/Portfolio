@@ -21,7 +21,9 @@ export default function SectionFour() {
   return (
     <>
       <section className="py-16 px-4">
-        <h1 className="text-4xl font-bold text-center">Experience</h1>
+        <h1 className="text-4xl font-bold text-center  text-gray-900">
+          Experience
+        </h1>
         <div
           data-aos="zoom-in-right"
           data-aos-delay="800"
@@ -35,8 +37,10 @@ export default function SectionFour() {
                   key={exp.id}
                   className="bg-white rounded-lg shadow-md p-6 mb-6 border-2 border-dashed border-zinc-500 "
                 >
-                  <h2 className="text-2xl font-semibold mb-4">{exp.title}</h2>
-                  <h3 className="text-xl font-medium mb-2">
+                  <h2 className="text-2xl font-semibold mb-4 text-zinc-900">
+                    {exp.title}
+                  </h2>
+                  <h3 className="text-xl font-medium mb-2 text-zinc-800">
                     {exp.location}{" "}
                     <a
                       href={exp.link}
@@ -68,7 +72,7 @@ export default function SectionFour() {
       <hr
         data-aos="fade-up"
         data-aos-anchor-placement="center-center"
-        className="w-full my-4 border-t-2 border-gray-400 mx-auto"
+        className="sm:w-2xl w-[200px] my-4 border-t-2 border-gray-400 mx-auto"
       />
     </>
   );
