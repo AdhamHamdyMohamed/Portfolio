@@ -45,7 +45,9 @@ export default function SectionTwo() {
                     loading="lazy"
                     className="w-full h-50 object-cover scale-100 group-hover:scale-110 transition-transform duration-300"
                   />
-                  <h2 className="text-xl text-zinc-800 font-bold mt-3 mx-3 ">{pro.name}</h2>
+                  <h2 className="text-xl text-zinc-800 font-bold mt-3 mx-3 ">
+                    {pro.name}
+                  </h2>
                 </a>
                 <div className="p-3 text-zinc-700">
                   <h5>

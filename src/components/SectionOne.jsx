@@ -1,4 +1,3 @@
-import React from "react";
 import { useEffect } from "react";
 import personalImg from "../assets/personalImg.webp";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
