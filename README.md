@@ -1,9 +1,7 @@
 <div style="max-width: 900px; margin: auto; font-family: Arial, sans-serif; line-height: 1.6;">
 
   <h1 style="text-align: center;">🚀 Adham Hamdy Portfolio</h1>
-  <p style="text-align: center;">
-    <img src="https://capsule-render.vercel.app/render?type=soft&color=auto&height=200&section=header&text=Adham%20Hamdy&fontSize=70" alt="Adham Hamdy Portfolio" width="100%">
-  </p>
+   
 
   <p style="text-align: center;"><b>A high-performance, product-focused portfolio website built with the modern web stack.</b></p>
 
