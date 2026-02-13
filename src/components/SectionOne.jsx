@@ -36,25 +36,25 @@ export default function SectionOne() {
             data-aos-duration="1000"
             className="flex-1 space-y-6"
           >
-            <div>
-              <h1 className="font-bold text-3xl md:text-4xl lg:text-5xl text-zinc-900 leading-tight">
+            <div className="md:text-start text-center">
+              <h1 className="font-bold text-2xl md:text-4xl lg:text-5xl text-zinc-900 leading-tight">
                 I Am Adham Hamdy
               </h1>
               <p className="text-xl md:text-2xl text-zinc-700 font-medium mt-2">
-                Front-End React & Next.js Developer
+                Front End React.js Developer
               </p>
             </div>
 
-            <div className="h-1 w-20 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full"></div>
+            <div className="h-1 w-20 bg-gradient-to-r from-gray-700 to-zinc-400 rounded-full sm:mx-0 mx-auto"></div>
 
-            <p className="text-lg md:text-xl text-zinc-600 leading-relaxed">
+            <p className="text-lg md:text-xl text-zinc-600 leading-relaxed sm:mx-0 mx-auto text-justify sm:p-0 p-2">
               Product-Focused ITI 2025 MERN Track Graduate. I don't just build
               projects; I develop real-world products. My expertise lies in
               bridging the gap between design and logic, leveraging AI (OpenAI &
               Hugging Face).
             </p>
 
-            <div className="flex gap-4 justify-center sm:justify-start">
+            <div className="flex sm:gap-4 gap-2 justify-center sm:justify-start ">
               <a
                 href="https://drive.google.com/file/d/1rswb2t4YDQpu7p0A2QiJS1u8IgBb0S1w/view?usp=sharing"
                 target="_blank"

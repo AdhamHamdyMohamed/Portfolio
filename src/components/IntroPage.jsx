@@ -5,7 +5,7 @@ import "ldrs/react/Quantum.css";
 export default function IntroPage() {
   return (
     <>
-      <div className="flex flex-col items-center justify-center min-h-screen overflow-hidden bg-zinc-200">
+      <div className="flex flex-col items-center justify-center h-screen overflow-hidden bg-zinc-200">
         <Quantum size="45" speed="1.75" color="black" />
 
         <TextType

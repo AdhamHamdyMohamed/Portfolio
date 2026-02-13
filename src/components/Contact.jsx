@@ -14,48 +14,52 @@ export default function Contact() {
       once: true,
     });
   }, []);
+
   const formik = useFormik({
     initialValues: {
       name: "",
       email: "",
       message: "",
     },
-
     validationSchema: Yup.object({
       name: Yup.string()
         .min(3, "Name must be at least 3 characters")
         .required("Name is required"),
-
       email: Yup.string()
         .email("Invalid email address")
         .required("Email is required"),
-
       message: Yup.string()
         .min(10, "Message must be at least 10 characters")
         .required("Message is required"),
     }),
-
-    onSubmit: async (value, { resetForm }) => {
+    onSubmit: async (values, { resetForm }) => {
+      const toastId = toast.loading("Sending message...");
       try {
-        toast.loading("Sending message...");
-
         await emailjs.send(
           "service_d890nic",
           "template_w774j5v",
           {
-            name: value.name,
-            email: value.email,
-            message: value.message,
+            name: values.name,
+            email: values.email,
+            message: values.message,
           },
           "pe1CaYFWpfYAfXbCr",
         );
 
-        toast.dismiss();
-        toast.success("Message sent successfully");
+        toast.update(toastId, {
+          render: "Message sent successfully!",
+          type: "success",
+          isLoading: false,
+          autoClose: 3000,
+        });
         resetForm();
       } catch (error) {
-        toast.dismiss();
-        toast.error("Failed to send message ");
+        toast.update(toastId, {
+          render: "Failed to send message",
+          type: "error",
+          isLoading: false,
+          autoClose: 3000,
+        });
         console.error(error);
       }
     },
@@ -65,78 +69,96 @@ export default function Contact() {
     <section
       id="Contact"
       data-aos="zoom-in-right"
-      data-aos-delay="800"
+      data-aos-delay="200"
       data-aos-duration="1000"
-      className="py-16 px-4"
+      className="py-16 px-4 max-w-6xl mx-auto"
     >
-      <h1 className="text-4xl font-bold text-center text-gray-900">Contact</h1>
-      <div className="bg-white sm:max-w-5xl mt-8 mx-auto rounded-lg shadow-md p-7 border-2 border-dashed border-zinc-500 ">
-        <form onSubmit={formik.handleSubmit} className="space-y-6 mx-auto">
-          <div>
-            <input
-              type="text"
-              name="name"
-              placeholder="Name"
-              onChange={formik.handleChange}
-              onBlur={formik.handleBlur}
-              value={formik.values.name}
-              className="input border-2 border-zinc-500 w-full text-gray-950 bg-white"
-            />
-            {formik.touched.name && formik.errors.name && (
-              <p className="text-red-500 text-sm mt-1">{formik.errors.name}</p>
-            )}
-          </div>
+      <h1 className="text-4xl font-bold text-center text-gray-900 mb-12">
+        Contact Me
+      </h1>
 
-          <div>
-            <input
-              type="email"
-              name="email"
-              placeholder="Email"
-              onChange={formik.handleChange}
-              onBlur={formik.handleBlur}
-              value={formik.values.email}
-              className="input border-2 border-zinc-500 w-full text-gray-950 bg-white"
-            />
-            {formik.touched.email && formik.errors.email && (
-              <p className="text-red-500 text-sm mt-1">{formik.errors.email}</p>
-            )}
-          </div>
+      <div className="flex flex-col lg:flex-row gap-8 items-stretch">
+        {/* Form Side */}
+        <div className="card bg-base-100 shadow-xl border border-zinc-200 grow p-6 sm:p-10 border-2 border-dashed border-zinc-500">
+          <form onSubmit={formik.handleSubmit} className="space-y-5">
+            <div>
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                {...formik.getFieldProps("name")}
+                className={`input input-bordered w-full bg-white text-gray-900 ${
+                  formik.touched.name && formik.errors.name ? "input-error" : ""
+                }`}
+              />
+              {formik.touched.name && formik.errors.name && (
+                <p className="text-red-500 text-xs mt-1 ml-1">
+                  {formik.errors.name}
+                </p>
+              )}
+            </div>
 
-          {/* Message */}
-          <div>
-            <textarea
-              name="message"
-              placeholder="Message"
-              onChange={formik.handleChange}
-              onBlur={formik.handleBlur}
-              value={formik.values.message}
-              className="textarea border-2 border-zinc-500 w-full text-gray-800 bg-white"
-            />
-            {formik.touched.message && formik.errors.message && (
-              <p className="text-red-500 text-sm mt-1">
-                {formik.errors.message}
-              </p>
-            )}
-          </div>
-          <div className="text-center">
+            <div>
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                {...formik.getFieldProps("email")}
+                className={`input input-bordered w-full bg-white text-gray-900 ${
+                  formik.touched.email && formik.errors.email
+                    ? "input-error"
+                    : ""
+                }`}
+              />
+              {formik.touched.email && formik.errors.email && (
+                <p className="text-red-500 text-xs mt-1 ml-1">
+                  {formik.errors.email}
+                </p>
+              )}
+            </div>
+
+            <div>
+              <textarea
+                name="message"
+                placeholder="How can I help you?"
+                rows="4"
+                {...formik.getFieldProps("message")}
+                className={`textarea textarea-bordered w-full bg-white text-gray-900 ${
+                  formik.touched.message && formik.errors.message
+                    ? "textarea-error"
+                    : ""
+                }`}
+              />
+              {formik.touched.message && formik.errors.message && (
+                <p className="text-red-500 text-xs mt-1 ml-1">
+                  {formik.errors.message}
+                </p>
+              )}
+            </div>
+
             <button
               type="submit"
-              className="btn btn-success text-zinc-800"
               disabled={formik.isSubmitting}
+              className="btn btn-success w-full text-white font-bold tracking-wide"
             >
-              Send
+              {formik.isSubmitting ? "Sending..." : "Send Message"}
             </button>
-          </div>
+          </form>
+        </div>
 
-          <div className="divider divider-neutral text-zinc-800">Or</div>
+        <div className="divider lg:divider-horizontal text-gray-400">OR</div>
 
-          <div className="flex justify-center gap-6 text-3xl">
+        <div className="flex flex-col justify-center card bg-zinc-50 border-2 border-dashed border-zinc-500 grow place-items-center p-10">
+          <p className="text-gray-600 mb-6 font-bold ">
+            Reach out directly via:
+          </p>
+          <div className="flex flex-row lg:flex-col gap-8 text-5xl">
             <a
               href="https://wa.me/201026973414"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Chat with me on WhatsApp"
-              className="text-green-500 "
+              className="text-green-500 hover:scale-110 transition-transform"
+              title="WhatsApp"
             >
               <FontAwesomeIcon icon={faWhatsapp} />
             </a>
@@ -145,13 +167,13 @@ export default function Contact() {
               href="mailto:adham.hamdy.eldiasty@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Send me an email"
-              className="text-red-500"
+              className="text-red-500 hover:scale-110 transition-transform"
+              title="Email"
             >
               <FontAwesomeIcon icon={faEnvelope} />
             </a>
           </div>
-        </form>
+        </div>
       </div>
     </section>
   );
