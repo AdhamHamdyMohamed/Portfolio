@@ -38,20 +38,22 @@ export default function SectionOne() {
           >
             <div className="md:text-start text-center">
               <h1 className="font-bold text-2xl md:text-4xl lg:text-5xl text-zinc-900 leading-tight">
-                I Am Adham Hamdy
+                About me
               </h1>
               <p className="text-xl md:text-2xl text-zinc-700 font-medium mt-2">
-                Front End React.js Developer
+                I Am Adham Hamdy, a Front End React.js Developer
               </p>
             </div>
 
             <div className="h-1 w-20 bg-gradient-to-r from-gray-700 to-zinc-400 rounded-full sm:mx-0 mx-auto"></div>
 
             <p className="text-lg md:text-xl text-zinc-600 leading-relaxed sm:mx-0 mx-auto text-justify sm:p-0 p-2">
-              Product-Focused ITI 2025 MERN Track Graduate. I don't just build
-              projects; I develop real-world products. My expertise lies in
-              bridging the gap between design and logic, leveraging AI (OpenAI &
-              Hugging Face).
+              I'm a Product-Focused ITI 2025 MERN Track graduate. I don’t just
+              build projects—I craft real-world products that solve problems. I
+              specialize in bridging the gap between design and logic, turning
+              ideas into functional, user-centered solutions. Leveraging AI
+              technologies like OpenAI and Hugging Face, I bring innovation and
+              intelligence to every product I create.{" "}
             </p>
 
             <div className="flex sm:gap-4 gap-2 justify-center sm:justify-start ">

@@ -23,11 +23,11 @@ export default function SectionThree() {
           className="max-w-5xl mx-auto mt-5"
         >
           <div className="bg-white rounded-lg shadow-md p-6 border-2 border-dashed border-zinc-500 ">
-            <h2 className="text-2xl font-semibold mb-4 text-zinc-900">
+            <h2 className="sm:text-2xl font-semibold mb-4 text-zinc-900">
               Information Technology Institute (ITI) - Full Stack Web
               Development (MEARN Track)
             </h2>
-            <h3 className="text-xl font-medium mb-2 text-zinc-800">
+            <h3 className="sm:text-xl font-medium mb-2 text-zinc-800">
               Mansoura University{" "}
               <a
                 target="_blank"

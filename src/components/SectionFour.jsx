@@ -37,10 +37,10 @@ export default function SectionFour() {
                   key={exp.id}
                   className="bg-white rounded-lg shadow-md p-6 mb-6 border-2 border-dashed border-zinc-500 "
                 >
-                  <h2 className="text-2xl font-semibold mb-4 text-zinc-900">
+                  <h2 className="sm:text-2xl text-lg font-semibold mb-4 text-zinc-900">
                     {exp.title}
                   </h2>
-                  <h3 className="text-xl font-medium mb-2 text-zinc-800">
+                  <h3 className="sm:text-xl font-medium mb-2 text-zinc-800">
                     {exp.location}{" "}
                     <a
                       href={exp.link}

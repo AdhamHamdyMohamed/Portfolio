@@ -74,9 +74,7 @@ export default function SectionFive() {
                   )}
                 </div>
 
-                {index !== certificate.length - 1 && (
-                  <hr className="bg-gray-300" />
-                )}
+                <hr className="bg-gray-300" />
               </li>
             ))}
           </ul>

@@ -1,12 +1,13 @@
 {
   "certificates": [
+  
     {
       "id": 1,
-      "title": "Computer Science - Fundamentals of Programming",
-      "date": "07/2023 - 12/2023",
-      "location": "Route Academy",
-      "link": "https://www.linkedin.com/in/adham-hamdy-22a6971b8/details/experience/1736365125410/single-media-viewer/?profileId=ACoAADKlkYIBeCPnQq144YSzmU0mDjD1zQm9bfQ",
-      "description": "Completed a comprehensive course on the fundamentals of programming, covering key concepts such as algorithms, data structures, and software development principles. Gained practical experience through hands-on projects and exercises, demonstrating proficiency in programming languages and problem-solving skills."
+      "title": "Front End Development",
+      "date": "07/2024 - 11/2024",
+      "location": "DTC - Mansoura University",
+      "link": "https://www.linkedin.com/in/adham-hamdy-22a6971b8/details/experience/1736365289288/single-media-viewer/?profileId=ACoAADKlkYIBeCPnQq144YSzmU0mDjD1zQm9bfQ",
+      "description": "Completed a comprehensive course on front-end development, covering HTML, CSS, JavaScript, and modern frameworks like React. Gained practical experience in building responsive and interactive web applications."
     },
     {
       "id": 2,
@@ -16,13 +17,14 @@
       "link": "https://www.linkedin.com/in/adham-hamdy-22a6971b8/details/experience/1736365201564/single-media-viewer/?profileId=ACoAADKlkYIBeCPnQq144YSzmU0mDjD1zQm9bfQ",
       "description": "Completed an in-depth course on AI Career Essentials, covering key concepts such as AI fundamentals, career paths in AI, and practical applications of AI in various industries. Gained insights into the evolving landscape of artificial intelligence and its impact on the job market."
     },
+
     {
       "id": 3,
-      "title": "Front End Development",
-      "date": "07/2024 - 11/2024",
-      "location": "DTC - Mansoura University",
-      "link": "https://www.linkedin.com/in/adham-hamdy-22a6971b8/details/experience/1736365289288/single-media-viewer/?profileId=ACoAADKlkYIBeCPnQq144YSzmU0mDjD1zQm9bfQ",
-      "description": "Completed a comprehensive course on front-end development, covering HTML, CSS, JavaScript, and modern frameworks like React. Gained practical experience in building responsive and interactive web applications."
+      "title": "Computer Science - Fundamentals of Programming",
+      "date": "07/2023 - 12/2023",
+      "location": "Route Academy",
+      "link": "https://www.linkedin.com/in/adham-hamdy-22a6971b8/details/experience/1736365125410/single-media-viewer/?profileId=ACoAADKlkYIBeCPnQq144YSzmU0mDjD1zQm9bfQ",
+      "description": "Completed a comprehensive course on the fundamentals of programming, covering key concepts such as algorithms, data structures, and software development principles. Gained practical experience through hands-on projects and exercises, demonstrating proficiency in programming languages and problem-solving skills."
     }
   ]
 }
