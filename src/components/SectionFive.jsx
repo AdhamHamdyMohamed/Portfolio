@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import axios from "axios";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -87,7 +86,7 @@ export default function SectionFive() {
       <hr
         data-aos="fade-up"
         data-aos-anchor-placement="center-center"
-        className="sm:w-2xl w-[200px] my-4 border-t-2 border-gray-400 mx-auto"
+        className="sm:w-2xl w-50 my-4 border-t-2 border-gray-400 mx-auto"
       />
     </>
   );
