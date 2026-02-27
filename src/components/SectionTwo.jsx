@@ -93,7 +93,7 @@ export default function SectionTwo() {
       <hr
         data-aos="fade-up"
         data-aos-anchor-placement="center-center"
-        className="sm:w-2xl w-[200px] my-4 border-t-2 border-gray-400 mx-auto"
+        className="sm:w-2xl w-50 my-4 border-t-2 border-gray-400 mx-auto"
       />
     </>
   );
