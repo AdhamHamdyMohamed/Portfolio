@@ -2,8 +2,6 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLink } from "@fortawesome/free-solid-svg-icons";
 
 export default function SectionFive() {
   const [certificate, setCertificate] = useState([]);
@@ -11,10 +9,10 @@ export default function SectionFive() {
   useEffect(() => {
     Aos.init({ once: true });
 
-    axios
-      .get("/dataBase/Certificates.json")
-      .then((res) => setCertificate(res.data.certificates))
-      .catch((err) => console.log(err));
+    fetch("/dataBase/Certificates.json")
+      .then((response) => response.json())
+      .then((data) => setCertificate(data.certificates))
+      .catch((error) => console.error("Error fetching certificates:", error));
   }, []);
 
   return (
@@ -63,14 +61,18 @@ export default function SectionFive() {
                     <p className="text-justify">{cert.description}</p>
                     <div className="flex justify-center">
                       {cert.link && (
-                        <a
-                          href={cert.link}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="btn btn-success text-gray-800 mt-2"
+                        <button
+                          className="btn btn-success text-gray-800 mt-2 cursor-pointer"
+                          onClick={() => {
+                            window.open(
+                              cert.link,
+                              "_blank",
+                              "noopener,noreferrer",
+                            );
+                          }}
                         >
                           View Certificate
-                        </a>
+                        </button>
                       )}
                     </div>
                   </div>
