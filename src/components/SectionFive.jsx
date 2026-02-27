@@ -58,20 +58,22 @@ export default function SectionFive() {
                   } mb-10`}
                 >
                   <time className="font-mono italic">{cert.date}</time>
-                  <div className="text-lg font-black">{cert.title}</div>
-                  <p className="text-justify">{cert.description}</p>
+                  <div className="border-2 border-dashed border-zinc-500 rounded-lg p-4 mt-2 bg-gray-100">
+                    <div className="text-lg font-black">{cert.title}</div>
+                    <p className="text-justify">{cert.description}</p>
 
-                  {cert.link && (
-                    <a
-                      href={cert.link}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="mt-2 inline-flex items-center text-zinc-600 hover:underline"
-                    >
-                      <FontAwesomeIcon icon={faLink} className="mr-2" />
-                      View Certificate
-                    </a>
-                  )}
+                    {cert.link && (
+                      <a
+                        href={cert.link}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="mt-2 inline-flex items-center text-zinc-600 hover:underline"
+                      >
+                        <FontAwesomeIcon icon={faLink} className="mr-2" />
+                        View Certificate
+                      </a>
+                    )}
+                  </div>
                 </div>
 
                 <hr className="bg-gray-300" />
