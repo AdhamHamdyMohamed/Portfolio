@@ -45,7 +45,7 @@ export default function SectionOne() {
               </p>
             </div>
 
-            <div className="h-1 w-20 bg-gradient-to-r from-gray-700 to-zinc-400 rounded-full sm:mx-0 mx-auto"></div>
+            <div className="h-1 w-20 bg-linear-to-r from-gray-700 to-zinc-400 rounded-full sm:mx-0 mx-auto"></div>
 
             <p className="text-lg md:text-xl text-zinc-600 leading-relaxed sm:mx-0 mx-auto text-justify sm:p-0 p-2">
               I'm a Product-Focused ITI 2025 MERN Track graduate. I don’t just
@@ -104,7 +104,7 @@ export default function SectionOne() {
       <hr
         data-aos="fade-up"
         data-aos-anchor-placement="center-center"
-        className="sm:w-2xl w-[200px] my-4 border-t-2 border-gray-400 mx-auto"
+        className="sm:w-2xl w-50 my-4 border-t-2 border-gray-400 mx-auto"
       />
     </>
   );

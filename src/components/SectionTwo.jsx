@@ -67,7 +67,7 @@ export default function SectionTwo() {
                     ))}
                     <br />
                   </div>
-                  {pro.id !== 2 && (
+                  {pro.id && (
                     <div className="text-center">
                       <button
                         className="btn btn-dash btn-success mt-4 text-zinc-800"

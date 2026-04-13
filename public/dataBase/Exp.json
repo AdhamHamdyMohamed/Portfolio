@@ -2,29 +2,10 @@
   "experience": [
     {
       "id": 1,
-      "title": "Front End Developer | React.JS",
-      "location": "Spider Tech",
-      "link": "https://www.spider-tech.net/en",
-      "date": "01/2026 - Present",
-      "description": "With a team of skilled developers and designers, we build innovative solutions that solve complex problems and deliver outstanding experiences that exceed expectations.",
-      "skills": [
-        "HTML",
-        "CSS",
-        "Tailwind CSS",
-        "JavaScript",
-        "React.js",
-        "Git",
-        "GitHub",
-        "Next.js",
-        "Unit Testing"
-      ]
-    },
-    {
-      "id": 2,
       "title": "Freelance Front End Developer",
       "location": "Khamsat - Self Employed",
       "link": "https://khamsat.com/user/adham_hamdy001",
-      "date": "08/2025 - Present",
+      "date": "08/2025 - 10/2025",
       "description": "Developed responsive and scalable websites and web applications for multiple clients using modern frontend technologies. Collaborated closely with clients to gather requirements, translate business needs into technical solutions, and deliver high-quality, user-focused products within agreed timelines.",
       "skills": [
         "HTML",
@@ -41,7 +22,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": 2,
       "title": "Innovation & Business Trainee",
       "location": "Startup Factory x ITI - Smart Village & New Administrative Capital",
       "link": "https://www.linkedin.com/in/adham-hamdy-22a6971b8/overlay/experience/2781394828/multiple-media-viewer/?profileId=ACoAADKlkYIBeCPnQq144YSzmU0mDjD1zQm9bfQ&treasuryMediaId=1762857149563",

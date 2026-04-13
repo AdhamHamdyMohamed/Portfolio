@@ -2,6 +2,20 @@
   "projects": [
     {
       "id": 1,
+      "name": "Molkhasatk",
+      "description": "A Next.js and Supabase platform for teachers to upload study materials.",
+      "tech": ["TypeScript", "Next.js", "Supabase"],
+      "github": "https://github.com/AdhamHamdyMohamed/Student-NoteBook",
+      "demo": "https://www.studentsummary.site/",
+      "category": "Client Work",
+      "state": "Finished",
+      "img": "Molkhasatk.webp",
+      "problemStatement": "Teachers often struggle to share study materials and resources with their students in an organized and accessible manner, leading to difficulties for students in finding and downloading necessary materials.",
+      "solution": "Developed 'Molkhasatk', a platform that allows teachers to easily upload study materials and PDFs, while providing students with a user-friendly interface to browse and download the resources they need for their studies.",
+      "outcome": "The platform successfully facilitated the sharing of study materials between teachers and students, improving accessibility and organization of educational resources, ultimately enhancing the learning experience for students."
+    },
+    {
+      "id": 2,
       "name": "Sofrah",
       "description": "A clean, responsive UI landing page crafted for a freelance project.",
       "tech": ["HTML", "CSS", "Bootstrap", "JavaScript"],
@@ -14,20 +28,7 @@
       "solution": "Developed a responsive landing page using HTML, CSS, Bootstrap, and JavaScript, ensuring compatibility across various devices and browsers. Implemented modern design principles to enhance user experience and engagement.",
       "outcome": "The landing page successfully attracted more visitors and potential clients, leading to increased inquiries and business opportunities for the client."
     },
-    {
-      "id": 2,
-      "name": "E-Commerce Platform",
-      "description": "A Full-featured e-commerce web application integrated with AI capabilities.",
-      "tech": ["Next.js", "Supabase", "Open AI API"],
-      "github": "",
-      "demo": "",
-      "category": "Personal",
-      "state": "In Progress",
-      "img": "inProgress.webp",
-      "problemStatement": "The challenge was to create a seamless AI-powered online shopping experience that enhances user engagement and streamlines operations, serving not only customers but also marketers by enabling them to easily create landing pages to showcase their products and optimize the buying and selling experience.",
-      "solution": "Developing a full-featured e-commerce platform using Next.js for the frontend, Supabase for backend services, and integrating OpenAI's API to provide personalized recommendations and customer support.",
-      "outcome": "The project is currently in progress, with plans to launch a beta version soon to gather user feedback and make further improvements."
-    },
+
     {
       "id": 3,
       "name": "Code Connect",
@@ -35,7 +36,7 @@
       "tech": ["Next.js", "Nest.js", "Socket.io"],
       "github": "https://github.com/AdhamHamdyMohamed/CodeConnect",
       "demo": "https://code-connect.spider-tech.net/en",
-      "category": "ITI Teammates - Spider Tech Startup",
+      "category": "ITI Teammates",
       "state": "Live",
       "img": "codeConnect.webp",
       "problemStatement": "Developers often face challenges in finding quick and reliable support for coding issues, leading to delays in project completion and frustration.",
